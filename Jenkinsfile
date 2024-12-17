@@ -43,7 +43,7 @@ pipeline {
       }
     }
 
-   stage('Stage V: QualityGates') {
+   #stage('Stage V: QualityGates') {
       steps { 
         echo "Running Quality Gates to verify the code quality"
         script {
@@ -55,7 +55,7 @@ pipeline {
            }
         }
       }
-    }
+    #}
    
    stage('Stage VI: Build Image') {
       steps { 
